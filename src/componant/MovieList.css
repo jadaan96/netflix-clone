@@ -1,0 +1,7 @@
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 500vh;
+    margin: 20px;
+}
