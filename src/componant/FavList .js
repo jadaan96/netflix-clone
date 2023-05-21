@@ -25,7 +25,9 @@ function FavList ({handleClose,show,productDetalis}) {
 //    } 
 //   const path = 'https://image.tmdb.org/t/p/original'
   return (
-    <></>
+    <>
+    
+    </>
 //     <div>
 
 //     <Card style={{ width: '18rem' }} key={product.id}>
