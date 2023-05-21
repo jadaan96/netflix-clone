@@ -1,36 +1,47 @@
-// import React, { useEffect, useState } from 'react'
-// import { Row } from 'react-bootstrap'
-// import ModalMovie from './ModalMovie'
-// import axios from 'axios';
+import React, { useState } from 'react'
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
+// import axios from 'axios'
+// import Card from 'react-bootstrap/Card';
 
-export default function FavList() {
-//   const [products, setProducts] = useState([]);
-
-//   const fetchData = async () => {
-//     try {
-//       const res = await axios.get(`http://localhost:3002/addMovie`);
-//       console.log(res.data.results);
-//       setProducts(res.data.results)
-//     } catch(err) {
-//       console.log(err)
-//     }
+function FavList ({handleClose,show,productDetalis}) {
+//   const [comment,setcommit]=useState('')
+//   const saveData = async () =>{
+    
+//     const modifiedItem = {...productDetalis, comment: comment}; 
+//     const res=await axios({
+//       method:'get',
+//       url:'https://movie-library-8zrb.onrender.com/addMovie',
+//       data:modifiedItem,
+//     })
+//     // axios.post(`http://localhost:3002/addMovie`,productDetalis)
+//     // .then(res => console.log(res.data))
+//     // .catch(err =>console.log(err))
+   
 //   }
-
-//   useEffect(() => {
-//     fetchData();
-//   }, [])
-
-  return (<div></div>)
+//   const handlehide = () => {
+//     saveData()
+//     handleClose() 
+//    } 
+//   const path = 'https://image.tmdb.org/t/p/original'
+  return (
+    <></>
 //     <div>
-//       <Row> 
-//       {
-         
-//             products.map(item => 
-//               <ModalMovie product={item} />
-            // )
-          
-//         }
-//       </Row>
-//     </div>
-//   )
+
+//     <Card style={{ width: '18rem' }} key={product.id}>
+//     <Card.Img variant="top" src={path+product.poster_path} />
+//     <Card.Body>
+//       <Card.Title>{product.title}</Card.Title>
+//       <Card.Text>
+//         {product.overview.slice(0,100)}
+//       </Card.Text>
+//       <Button variant="primary" onClick={handleClick} >add to Favorite</Button>
+//     </Card.Body>
+//   </Card>
+ 
+//   </div>
+    
+  );
 }
+
+export default FavList ;

@@ -1,7 +1,7 @@
 import Movie from '../componant/Movie'
-import ModalMovie from './ModalMovie';
+import ModalMovie from '../ModalMovie/ModalMovie';
 import React, {useState } from 'react'
-import '../componant/MovieList.css'
+import '../MovieList/MovieList.css'
 
 export default function MovieList({data}) {
   const [productDetalis,setproductDetalis]=useState({})
@@ -20,6 +20,7 @@ export default function MovieList({data}) {
         }
         
         <ModalMovie show={show} handleClose={handleClose}  productDetalis={productDetalis}  />
+        
     </div>
   )
 }

@@ -11,7 +11,7 @@ function ModalMovie({handleClose,show,productDetalis}) {
     const modifiedItem = {...productDetalis, comment: comment}; 
     const res=await axios({
       method:'post',
-      url:'http://localhost:3002/addMovie',
+      url:'https://movie-library-8zrb.onrender.com/addMovie',
       data:modifiedItem,
     })
     // axios.post(`http://localhost:3002/addMovie`,productDetalis)

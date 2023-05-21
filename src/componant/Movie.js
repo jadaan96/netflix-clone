@@ -8,7 +8,7 @@ export default function Movie({product,handleShow,setproductDetalis}) {
     setproductDetalis(product)
     handleShow() 
    }
-  const path = 'https://image.tmdb.org/t/p/original'
+  const path = 'https://image.tmdb.org/t/p/w500'
   return (
     <div>
 
