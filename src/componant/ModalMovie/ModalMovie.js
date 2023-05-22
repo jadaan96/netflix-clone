@@ -17,7 +17,8 @@ function ModalMovie({handleClose,show,MovieDetalis}) {
     // axios.post(`http://localhost:3002/addMovie`,MovieDetalis)
     // .then(res => console.log(res.data))
     // .catch(err =>console.log(err))
-   
+   console.log(res)
+   //
   }
   const handlehide = () => {
     saveData()
