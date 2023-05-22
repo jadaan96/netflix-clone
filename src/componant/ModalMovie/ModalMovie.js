@@ -4,17 +4,17 @@ import Modal from 'react-bootstrap/Modal';
 import './ModalMovie.css'
 import axios from 'axios'
 
-function ModalMovie({handleClose,show,productDetalis}) {
+function ModalMovie({handleClose,show,MovieDetalis}) {
   const [comment,setcommit]=useState('')
   const saveData = async () =>{
     
-    const modifiedItem = {...productDetalis, comment: comment}; 
+    const modifiedItem = {...MovieDetalis, comment: comment}; 
     const res=await axios({
       method:'post',
       url:'https://movie-library-8zrb.onrender.com/addMovie',
       data:modifiedItem,
     })
-    // axios.post(`http://localhost:3002/addMovie`,productDetalis)
+    // axios.post(`http://localhost:3002/addMovie`,MovieDetalis)
     // .then(res => console.log(res.data))
     // .catch(err =>console.log(err))
    
@@ -28,11 +28,11 @@ function ModalMovie({handleClose,show,productDetalis}) {
     
       <Modal  show={show} onHide={handleClose} >
         <Modal.Header closeButton>
-          <Modal.Title>{productDetalis.title}</Modal.Title>
+          <Modal.Title>{MovieDetalis.title}</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-         <img  src={path+productDetalis.poster_path} /> 
+         <img  src={path+MovieDetalis.poster_path} /> 
          <br/><br/><br/>
          <label for="">Type your comment...</label>
           <input type="text" onChange={(e) =>setcommit(e.target.value)} />
