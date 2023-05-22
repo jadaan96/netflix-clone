@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import ModalMovie from './ModalMovie'
+import ModalMovie from './ModalMovie/ModalMovie'
 
 export default function Movie({product,handleShow,setproductDetalis}) {
    const handleClick = () => {
