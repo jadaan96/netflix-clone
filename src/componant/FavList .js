@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Movie from './Movie';
+import './FavList.css'
 import UpdateModal from './UpdateModal/UpdateModal '
 
 export default function FavList() {
@@ -32,7 +33,7 @@ export default function FavList() {
   }, [isUpdated])
 
   return (
-    <div>
+    <div className={'mainDiv'} >
        
       {
           TheMovies.length && (
