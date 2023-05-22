@@ -1,4 +1,4 @@
-import Movie from '../componant/Movie'
+import Movie from '../Movie'
 import ModalMovie from '../ModalMovie/ModalMovie';
 import React, {useState } from 'react'
 import '../MovieList/MovieList.css'
