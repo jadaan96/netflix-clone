@@ -4,7 +4,7 @@ import React, {useState } from 'react'
 import '../MovieList/MovieList.css'
 
 export default function MovieList({data}) {
-  const [productDetalis,setproductDetalis]=useState({})
+  const [MovieDetalis,setMovieDetalis]=useState({})
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,12 +14,12 @@ export default function MovieList({data}) {
       {
           data.length && (
             data.map(item => 
-              <Movie product={item} handleShow={handleShow} setproductDetalis={setproductDetalis} />
+              <Movie product={item} handleShow={handleShow} setMovieDetalis={setMovieDetalis} />
             )
           )
         }
         
-        <ModalMovie show={show} handleClose={handleClose}  productDetalis={productDetalis}  />
+        <ModalMovie show={show} handleClose={handleClose}  MovieDetalis={MovieDetalis}  />
         
     </div>
   )
